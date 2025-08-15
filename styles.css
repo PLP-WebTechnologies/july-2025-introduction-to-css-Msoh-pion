@@ -1,0 +1,152 @@
+/* RESET & BOX MODEL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #333;
+}
+.header h1 {
+    color: #000;
+}
+.header p {
+    font-size: 18px;
+}
+
+/* NAVIGATION */
+.nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero {
+    background-image: url('images/garage_banner.png');  
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+.hero h2 {
+    margin-bottom: 10px;
+    color: #222;
+}
+.hero p {
+    margin-bottom: 15px;
+}
+.hero button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    animation: pulse 1.5s infinite;
+}
+
+.hero button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+}
+
+
+
+/* MAIN CONTAINER */
+.products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* CARDS */
+.card {
+    flex: 1 1 250px;
+    background: #fff;
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    max-width: 300px;
+    border-radius: 8px;
+    text-align: center;
+}
+.card h2 {
+    margin-bottom: 10px;
+}
+.card p {
+    margin-bottom: 15px;
+}
+.card button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.card button:hover {
+    background-color: #e6b800;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+/* FOOTER */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+.footer p {
+    margin: 5px 0;
+}
+
